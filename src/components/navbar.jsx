@@ -1,13 +1,14 @@
  import Styles from './navbar.module.css'
- import logo from '../assets/oncaptd.svg'
+ import logo from '../assets/pantanal-vivo-logo.png'
+import { Link } from 'react-router-dom'
 
  function Navbar (){
    return(
         <>  
-        <nav className='navbar navbar-expand-sm navbar-dark bg-dark px-3'>
-            <a href="" className='navbar-brand gap-1'>
+        <nav className='navbar navbar-expand-md navbar-dark bg-dark px-3'>
+            <a href="" className='navbar-brand'>
                 <img src={logo} alt="Logo da empresa" width="70" height="70"/>
-                ONG ETC
+                <span className='ms-3 link-gray'>Projeto Pantanal Vivo</span>
             </a> 
 
             {/* botão para mobile*/}
@@ -26,42 +27,46 @@
             <div className='navbar-collapse collapse' id='navbarItens'>
                 <ul className='navbar-nav mx-auto gap-4 fs-5'>
                     <li className='nav-item'>
-                        <a className='nav-link  text-warning' href="">
+                        <Link className='nav-link  text-warning link-gray' to="/">
                             Home
-                        </a>
+                        </Link>
                     </li>
 
                     <li className='nav-item'>
-                        <a className='nav-link  text-warning' href="">
-                            Contato
-                        </a>
-                    </li>
-
-                    <li className='nav-item'>
-                        <a className='nav-link text-warning' href="">
+                        <Link className='nav-link  text-warning link-gray' to="/sobre">
                             Sobre
-                        </a>
+                        </Link>
+                    </li>
+
+                    <li className='nav-item'>
+                        <Link className='nav-link text-warning link-gray' to="/contato">
+                            Contato
+                        </Link>
                     </li>   
 
                     <li className='nav-item dropdown'>
                         <a href=""
-                           className='nav-link dropdown-toggle  text-warning'
+                           className='nav-link dropdown-toggle  text-warning link-gray'
                            data-bs-toggle='dropdown'
                            aria-haspopup='true'
                            aria-expanded='false'
                            id='dropdownNav'>
-                           Dropdown
+                           Links 
                         </a>
 
                         <div className='dropdown-menu' aria-labelledby="dropdownNav">
-                            <a href="" className='dropdown-item'> aaa</a>
-                            <a href="" className='dropdown-item'> bbb</a>
-                            <a href="" className='dropdown-item'> ccc</a>
+                            <a href="https://www.youtube.com/watch?v=SIpQchq50C4" className='dropdown-item' target="_blank" rel="noopener noreferrer"> VÍDEO: Onça preda jacaré</a>
+                            <a href="https://sospantanal.org.br/" className='dropdown-item' target="_blank" rel="noopener noreferrer"> SOS Pantanal</a>
+                            <a href="https://servicos.ibama.gov.br/ctf/" className='dropdown-item' target="_blank" rel="noopener noreferrer"> Ibama</a>
                         </div>
                     </li>               
                 </ul>
                 <a href="">
-                    <h4><span className="badge text-bg-warning" id='doar'>DOAR</span></h4>
+                    <h4>
+                        <a className="badge text-bg-warning text-dark link-gray text-decoration-none" href='https://sospantanal.org.br/' target="_blank" rel="noopener noreferrer">
+                        DOAR
+                        </a>
+                    </h4>
                 </a>
                 
             </div>

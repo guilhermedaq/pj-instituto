@@ -1,16 +1,24 @@
-import Navbar from "./components/navbar"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import Navbar from "./components/navbar";
+import Content from "./components/content/Content.jsx";
+import Contato from "./components/pages/Contato.jsx";
+import Sobre from "./components/pages/Sobre.jsx";
+
+import "./styles/custom.scss";
 
 function App() {
-  
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
-      <h1>hello</h1>
-      <p>Welcome </p>
-  
-    </>
-  )
+
+      <Routes>
+        <Route path="/" element={<Content />} />
+        <Route path="/contato" element={<Contato />} />
+        <Route path="/sobre" element={<Sobre />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

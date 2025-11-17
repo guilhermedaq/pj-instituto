@@ -3,12 +3,11 @@ import { Link } from 'react-router-dom'
 
  function Navbar (){
    return(
-        <header className='bg-black flex items-center justify-between'>  
-            <img class="w-22 md:w-30 lg:w-28" src={logo} />
-            <ul className='flex gap-6 text-xl text-yellow-500 font-sans'>
-                <li><a href="" className=' hover:text-amber-200  '>Home</a></li>
-                <li><a href="" className=' hover:text-amber-200  '>Sobre</a></li>
-                <li><a href="" className=' hover:text-amber-200  '>Ideia</a></li>
+        <header className='bg-[#3E402B] (marrom madeira) flex items-center justify-between'>  
+            <img className="w-22" src={logo} />
+            <ul className='flex gap-6 text-xl text-[#D1A054] font-sans'>
+                <li><Link to="/" className=' hover:text-amber-200  '>Home</Link></li>
+                <li><Link to="/sobre" className=' hover:text-amber-200  '>Sobre</Link></li>
                 <li><a href="" className=' hover:text-amber-200'>Links</a></li>
             </ul>
             <div>

@@ -5,7 +5,7 @@ import Content from "./components/content/Content.jsx";
 import Contato from "./components/pages/Contato.jsx";
 import Sobre from "./components/pages/Sobre.jsx";
 
-import "./styles/custom.scss";
+
 
 function App() {
   return (

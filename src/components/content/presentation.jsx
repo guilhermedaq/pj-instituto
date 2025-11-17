@@ -1,10 +1,8 @@
 function Presentation (){
     return (
-        <>
-            <div className="container bg-dark text-primary">
-                oiiiiii
-            </div>
-        </>
+        <div>
+            <h1>presentation</h1>   
+        </div>
     );
 
 }

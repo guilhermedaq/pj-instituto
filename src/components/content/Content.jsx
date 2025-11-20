@@ -3,7 +3,7 @@ import Presentation from "./presentation.jsx";
 
 function Content (){
     return (
-        <div className="bg-[#FFF9E6] min-h-screen px-5 py-5 sm:px-10 ">
+        <div className="min-h-screen  py-5 mx-3 md:mx-15 lg:mx-40   ">
             <BigCard />
             <Presentation />
    

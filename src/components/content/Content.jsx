@@ -1,11 +1,11 @@
 import BigCard from "./BigCard.jsx";
-import Presentation from "./presentation.jsx";
+import CardAnimal from "./CardAnimal.jsx";
 
 function Content (){
     return (
         <div className="min-h-screen  py-5 mx-3 md:mx-15 lg:mx-40   ">
             <BigCard />
-            <Presentation />
+            <CardAnimal />
    
         </div>
     );
